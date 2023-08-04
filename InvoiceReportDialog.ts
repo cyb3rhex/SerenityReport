@@ -25,8 +25,7 @@ namespace MyProject.Invoice {
                         let startDate = criteria.StartDate.valueAsDate;
                         let endDate = criteria.EndDate.valueAsDate;
                         
-                        // You can use these values to filter your data and generate the report.
-                        // Add your code here to generate the report based on the criteria.
+                        // You can use these values to filter your data and generate the report
                     }
                 },
                 {
