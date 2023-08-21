@@ -5,6 +5,8 @@ namespace MyProject.Invoice.Forms
     public class InvoiceReportForm
     {
         public String InvoiceNumber { get; set; }
+
+        [LookupEditor("YourVendorLookupKey")] // Replace YourVendorLookupKey with your actual vendor lookup key.
         public String Vendor { get; set; }
 
         [DateEditor]
