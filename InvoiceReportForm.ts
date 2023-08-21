@@ -1,5 +1,4 @@
 namespace MyProject.Invoice {
-
     export class InvoiceReportForm extends Serenity.PrefixedContext {
         static formKey = 'Invoice.InvoiceReport';
 
@@ -8,7 +7,7 @@ namespace MyProject.Invoice {
         }
 
         public InvoiceNumber = Serenity.StringEditor;
-        public Vendor = Serenity.StringEditor;
+        public Vendor = Serenity.LookupEditor; // Changed to LookupEditor
         public StartDate = Serenity.DateEditor;
         public EndDate = Serenity.DateEditor;
     }
