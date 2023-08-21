@@ -1,9 +1,8 @@
 namespace MyProject.Invoice {
-
     @Serenity.Decorators.registerClass()
     export class InvoiceReportDialog extends Serenity.PropertyDialog<any, any> {
-
         private form: InvoiceReportForm;
+        // Add a reference to a grid or table here to display the report data
 
         constructor() {
             super();
@@ -24,8 +23,9 @@ namespace MyProject.Invoice {
                         let vendor = criteria.Vendor.value;
                         let startDate = criteria.StartDate.valueAsDate;
                         let endDate = criteria.EndDate.valueAsDate;
-                        
-                        // You can use these values to filter your data and generate the report
+
+                        // Call your server-side logic to fetch data based on the criteria
+                        // Then update your grid/table with the fetched data
                     }
                 },
                 {
